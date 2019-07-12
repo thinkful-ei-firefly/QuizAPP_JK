@@ -1,3 +1,46 @@
 * {
     box-sizing: border-box;
 }
+body {
+    font-family: 'Mountains of Christmas', cursive;
+    font-family: 'Russo One', sans-serif;
+    font-size: 24px;
+    background-color: #ffffff;
+    background-image: url('creep.png');
+    color:white;
+}
+header ul li {
+    padding: 10px 20px;
+    list-style: none;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    display: inline;
+}
+header ul {
+    text-align: right;
+    margin-top: 50px
+}
+/*main*/
+
+h2 {
+    font-size: 40px;
+    font-family: 'Mountains of Christmas', cursive;
+    font-style: normal;
+    text-align: center;
+    color: white;
+}
+button {
+    padding: 20px;
+    border: none;
+    background-color:red;
+    color: #363946;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    width: 25%;
+    text-align: center;
+}
