@@ -61,12 +61,45 @@ function startQuiz () {}
 
 
 function askQuestion () {
-  $('main').html(`${questions[qnum].question}`);
+  //$('main').html(`${questions[qnum].question}`);
   //empties the <main> element and appends an HTML block containing the current question to the <main>
+  $('main').html(`
+    <div class="questionsAnswer">
+      <h1>${questions[qnum].question}</h1>
+      <form action="" method="get" class="form-example">
+          <div class="form-example">
+              <label for="a1">${questions[qnum].a1}</label>
+              <input type="radio" name="a" id="a1" value="a1" required>
+          </div>
+
+          <div class="form-example">
+              <label for="a2">${questions[qnum].a2}</label>
+              <input type="radio" name="a" id="a2" value="a2">
+          </div>
+
+          <div class="form-example">
+              <label for="a3">${questions[qnum].a3}</label>
+              <input type="radio" name="a" id="a3" value="a3">
+          </div>
+
+          <div class="form-example">
+              <label for="a4">${questions[qnum].a4}</label>
+              <input type="radio" name="a" id="a4" value="a4">
+          </div>
+
+          <div class="form-example">
+              <button type="submit" value="next">
+          </div>
+
+      </form> 
+  </div>
+`);
+
+
 
   $('.questionNumber').text(`${qnum+1}`);  //updates the header to reflect current value of qnum
 
-  qnum++; //FOR TESTING PURPOSES ONLY. REMOVE THIS ONCE OTHER SECTIONS ARE FUNCTIONAL!
+  //qnum++; //FOR TESTING PURPOSES ONLY. REMOVE THIS ONCE OTHER SECTIONS ARE FUNCTIONAL!
 }
 
 
