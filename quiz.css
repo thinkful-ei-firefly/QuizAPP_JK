@@ -30,17 +30,3 @@ h2 {
     text-align: center;
     color: white;
 }
-button {
-    padding: 20px;
-    border: none;
-    background-color:red;
-    color: #363946;
-    font-size: 20px;
-    text-transform: uppercase;
-    border-radius: 0;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-top: 10px;
-    width: 25%;
-    text-align: center;
-}
