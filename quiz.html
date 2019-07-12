@@ -1,33 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!--start page-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Stephen King's 'IT' Quiz App</title>
+    <meta name="description" content="See if you can survive a battle of wits with Stephen King's 'It' quiz!">
+    <link href="quiz.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas|Russo+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <form class = "QuestionPage">
-            <div><h2>Pick an answer!</h2></div>
-            <div>
-                <input type="radio" id="a1" name="option" value="a1">
-                <label for="a1">Answer #1</label>
-            </div>
-            <div>
-                <input type="radio" id="a2" name="option" value="a2">
-                <label for="a2">Answer #2</label>
-            </div>
+    <header roll="banner"> <div>
+        <ul>
+            <li> Question: <span class="questionNumber">0</span></li>
+            <li> Correct:<span class="correct"> 0</span></li>
+            <li>Incorrect:<span class:="incorrect"> 0</span></li>
+            </ul>
+    </div>
+    </header>
+        <main>
+            <div class="questionsAnswer">
+                    <form action="" method="get" class="form-example">
+                            <div class="form-example">
+                              <label for="a1">A1</label>
+                              <input type="radio" name="a" id="a1" value="a1" required>
+                            </div>
 
-            <div>
-                <input type="radio" id="a3" name="option" value="a3">
-                <label for="a3">Answer #3</label>
+                            <div class="form-example">
+                                    <label for="a2">A2</label>
+                                    <input type="radio" name="a" id="a2" value="a2">
+                                  </div>
+                                  <div class="form-example">
+                                    <input type="submit" value="suscribe">
+                                  </div>
+                            <div class="form-example">
+                                <label for="a2">A3</label>
+                                <input type="radio" name="a" id="a3" value="a3">
+
+
+
+                            </div>
+                            </form>
+
+                                
             </div>
+        <!--<div>
 
-            <div><button>Submit</button></div>
-        </form>
-    </main>
 
-    
+
+
+            <h2>Can you make it out of Derry?</h2>
+            <button class="startquiz" type="button">Begin</button>
+        </div>--></main>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+    <script src="quiz.js"></script>
 </body>
 </html>
