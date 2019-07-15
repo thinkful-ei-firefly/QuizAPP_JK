@@ -60,8 +60,8 @@ const questions = [
 function askQuestion () {
   $('main').html(`
     <div class="centered">
-      <h1>${questions[qnum].question}</h1>
-      <form action="" method="get" class="questions">
+      <h1 aria-live="polite">${questions[qnum].question}</h1>
+      <form aria-live="polite" action="" method="get" class="questions">
           <div class="answer">
               <input type="radio" name="a" id="a1" value="${questions[qnum].a1}" required>
               <label for="a1">${questions[qnum].a1}</label>
@@ -117,9 +117,11 @@ function checkQuestion () {
 function feedback (bool) {
   if (bool) {
     $('main').html(`
-      <h2>Correct!</h2>
-      <p>Fun fact: ${questions[qnum].funFact}</p>
-      <button class="next">Next</button>
+      <div>
+        <h2 aria-live="polite">Correct!</h2>
+        <p aria-live="polite">Fun fact: ${questions[qnum].funFact}</p>
+        <button aria-live="polite" class="next">Next</button>
+      </div>
     `);
     
     numCorrect++;
@@ -127,9 +129,11 @@ function feedback (bool) {
 
   } else {
     $('main').html(`
-    <h2>Sorry!</h2>
-    <p>The correct answer was: ${questions[qnum].correct}</p>
-    <button class="next">Next</button>
+      <div>
+        <h2 aria-live="polite">Sorry!</h2>
+        <p aria-live="polite">The correct answer was: ${questions[qnum].correct}</p>
+        <button aria-live="polite" class="next">Next</button>
+      </div>
     `);
     
     numIncorrect++;
@@ -156,8 +160,8 @@ function feedbackNext () {
 function finalScore () {
   $('main').html(`
   <div>
-    <h2>Your final score was ${numCorrect} out of ${questions.length}</h2>
-    <button type="button" id="restartButton" class="restart">Try Again?</button>
+    <h2 aria-live="polite">Your final score was ${numCorrect} out of ${questions.length}</h2>
+    <button aria-live="polite" type="button" id="restartButton" class="restart">Try Again?</button>
   </div>
   `);
 }
@@ -168,8 +172,8 @@ function finalScore () {
 function restart () {
   $('main').html(` 
   <div> 
-    <h2>Can you make it out of Derry?</h2>
-    <button class="startQuiz" type="button">Begin</button>
+    <h2 aria-live="polite">Can you make it out of Derry?</h2>
+    <button aria-live="polite" class="startQuiz" type="button">Begin</button>
   </div>
   `);
 

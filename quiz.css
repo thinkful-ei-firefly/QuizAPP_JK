@@ -36,14 +36,17 @@ button {
     background-color: red;
     font-size: 20px;
     padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .answer {
-    text-align: center;
-    background-color:transparent;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
     width: 60%;
 }
 
+div {
+    text-align: center;
+}
