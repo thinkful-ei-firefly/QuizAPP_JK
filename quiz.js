@@ -91,7 +91,6 @@ function askQuestion () {
 `);
 
 
-
   $('.questionNumber').text(`${qnum+1}`);  
 
 }
@@ -181,6 +180,7 @@ function restart () {
   $('.questionNumber').text(`${qnum+1}`);
   $('span.correct').text(`${numCorrect}`);
   $('span.incorrect').text(`${numIncorrect}`);
+  
 
 }
 
