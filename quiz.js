@@ -197,8 +197,5 @@ $('main').on('submit', function () {
 $('main').on('click', '.next', function () {feedbackNext();});
 
 $('main').on('click', '.restart', function () {restart();});
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 8f8ebbbece06bca9c4a347efaf1d67514e39bd9a

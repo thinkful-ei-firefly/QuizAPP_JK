@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas|Russo+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header aria-live="polite" roll="banner"> <div>
+    <header aria-live="off" class="banner"> <div>
         <ul>
             <li> Question: <span class="questionNumber">0</span></li>
             <li> Correct: <span class="correct">0</span></li>
@@ -21,18 +21,18 @@
     </header>
         <main aria-live="polite">
             <!--Front Page-->
-                <div class="begin" id="begin"> 
+                <div aria-label="Can you make it out of Derry" class="begin" id="begin"> 
                     <h2>Can you make it out of Derry?</h2>
-                    <button aria-live="polite" class="startQuiz" type="button">Begin</button>
+                    <button aria-label="click button" class="startQuiz" type="button">Begin</button>
                 </div>
             
 
-           <div class="submitButton"> <div id="feed" class="feed">
+           <div> <div aria-label="submit button" id="feed" class="feed">
                 <p>Answer-correct-incorrrect</p>
-            </div> <button aria-live="polite" id="submitButton" class="submitButton">Submit
+            </div> <button id="submitButton" class="submitButton">Submit
             </button>
             </div>
-            <!--Questions
+           <!-- Questions
                 <div class="questionsAnswer">
                     <form action="" method="get" class="form-example">
                             <div class="form-example">
@@ -52,13 +52,13 @@
                                 <input type="radio" name="a" id="a4" value="a4">
                             </div>
                             <div class="form-example">
-                            <button aria-live="polite" type="button" id="next" class="next"> Next</button>
+                            <button aria-label="next button" type="button" id="next" class="next"> Next</button>
                             </div>
                     </div>
                     </form> 
             </div>
-        <!--Restart
-        <div><button aria-live= "polite" type="button" id="restartButton" class="restartButton">Try Again?</button>
+        -->
+        <div><button aria-live="restart button" type="button" id="restartButton" class="restartButton">Try Again?</button>
         </div>
      </main>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
