@@ -3,7 +3,6 @@
 }
 body {
     font-family: 'Mountains of Christmas', cursive;
-    font-family: 'Russo One', sans-serif;
     font-size: 24px;
     background-color: #ffffff;
     background-image: url('creep.png');
@@ -16,6 +15,7 @@ header ul li {
     font-size: 24px;
     text-transform: uppercase;
     display: inline;
+    font-family: 'Russo One', sans-serif;
 }
 header ul {
     text-align: right;
@@ -23,7 +23,7 @@ header ul {
 }
 /*main*/
 
-h2 {
+h1 {
     font-size: 40px;
     font-family: 'Mountains of Christmas', cursive;
     font-style: normal;
@@ -49,4 +49,39 @@ button {
 
 div {
     text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    button {
+        text-align: center;
+        background-color: red;
+        font-size: 30px;
+        padding: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        div {
+            text-align: center;
+        }
+    h2 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:736px) {
+    header ul li {
+        display: block;
+        padding: .5px;
+        text-align: right;
+    }
+
+    h2 { 
+       text-align: center;
+       font-size: 30px;  
+    }
+
+    button {
+        padding: 10px;
+        font-size: 20px;
+    }
 }
