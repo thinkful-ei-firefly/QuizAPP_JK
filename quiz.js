@@ -63,27 +63,27 @@ function askQuestion () {
       <h1>${questions[qnum].question}</h1>
       <form action="" method="get" class="form-example">
           <div class="form-example">
+              <input type="radio" name="a" id="a1" value="${questions[qnum].a1}" required>
               <label for="a1">${questions[qnum].a1}</label>
-              <input type="radio" name="a" id="a1" value="a1" required>
           </div>
 
-          <div class="form-example">
+          <div class="form-example">              
+              <input type="radio" name="a" id="a2" value="${questions[qnum].a2}">
               <label for="a2">${questions[qnum].a2}</label>
-              <input type="radio" name="a" id="a2" value="a2">
           </div>
 
-          <div class="form-example">
+          <div class="form-example">              
+              <input type="radio" name="a" id="a3" value="${questions[qnum].a3}">
               <label for="a3">${questions[qnum].a3}</label>
-              <input type="radio" name="a" id="a3" value="a3">
           </div>
 
-          <div class="form-example">
+          <div class="form-example">              
+              <input type="radio" name="a" id="a4" value="${questions[qnum].a4}">
               <label for="a4">${questions[qnum].a4}</label>
-              <input type="radio" name="a" id="a4" value="a4">
           </div>
 
           <div class="form-example">
-              <button type="submit" class="submit" value="next">
+              <button type="submit" class="submit" value="next">Submit</button>
           </div>
 
       </form> 
@@ -98,22 +98,14 @@ function askQuestion () {
 
 
 
-//listens for click on 'Submit' button
-//CURRENTLY just pulls a random number to see if the answer is true or false
-//NEEDS to actually check the answer
-//checks if the submitted answer matches the correct answer to the question
-//TODO: point Jquery selector at correct HTML item to extract form submission value
+//Checks submitted answer against the correct answer
 //Calls feedback() to display the feedback page, passing it a boolean T/F based on whether the player got the question right
 function checkQuestion () {
-  if (Math.random()<0.5) {
-    
-    feedback(true);
+  let answer = $('input:checked').val();
+  let correctAnswer = questions[qnum].correct;
 
-  } else {
-    
-    feedback(false);
-    
-  }
+  feedback(answer === correctAnswer);
+
 }
 
 
@@ -205,5 +197,8 @@ $('main').on('submit', function () {
 $('main').on('click', '.next', function () {feedbackNext();});
 
 $('main').on('click', '.restart', function () {restart();});
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 8f8ebbbece06bca9c4a347efaf1d67514e39bd9a
