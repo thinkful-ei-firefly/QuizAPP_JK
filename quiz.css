@@ -31,9 +31,10 @@ h2 {
     color: white;
 }
 
-button {
+
+.submitButton {
     text-align: center;
     background-color: red;
     font-size: 20px;
-    padding: 20px;
+    padding: 10px;
 }
