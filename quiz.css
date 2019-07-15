@@ -86,6 +86,21 @@ div {
     }
 }
 
+@media screen and (max-width: 320px) {
+    header ul li {
+        padding: .5px;
+        text-align: right;
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    button {
+        padding: 10px;
+        font-size: 10px;
+    }
+}
+
 a {
     color: red;
 }
