@@ -38,3 +38,11 @@ button {
     padding: 10px;
 }
 
+.answer {
+    text-align: center;
+    background-color: grey;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    width: 60%;
+}
