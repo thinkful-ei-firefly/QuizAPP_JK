@@ -59,30 +59,30 @@ const questions = [
 //updates the header to reflect current value of qnum
 function askQuestion () {
   $('main').html(`
-    <div class="questionsAnswer">
+    <div class="centered">
       <h1>${questions[qnum].question}</h1>
-      <form action="" method="get" class="form-example">
-          <div class="form-example">
+      <form action="" method="get" class="questions">
+          <div class="answer">
               <input type="radio" name="a" id="a1" value="${questions[qnum].a1}" required>
               <label for="a1">${questions[qnum].a1}</label>
           </div>
 
-          <div class="form-example">              
+          <div class="answer">              
               <input type="radio" name="a" id="a2" value="${questions[qnum].a2}">
               <label for="a2">${questions[qnum].a2}</label>
           </div>
 
-          <div class="form-example">              
+          <div class="answer">              
               <input type="radio" name="a" id="a3" value="${questions[qnum].a3}">
               <label for="a3">${questions[qnum].a3}</label>
           </div>
 
-          <div class="form-example">              
+          <div class="answer">              
               <input type="radio" name="a" id="a4" value="${questions[qnum].a4}">
               <label for="a4">${questions[qnum].a4}</label>
           </div>
 
-          <div class="form-example">
+          <div class="answer">
               <button type="submit" class="submit" value="next">Submit</button>
           </div>
 
