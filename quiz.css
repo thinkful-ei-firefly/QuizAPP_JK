@@ -85,3 +85,11 @@ div {
         font-size: 20px;
     }
 }
+
+a {
+    color: red;
+}
+
+a:visited {
+    color: white;
+}

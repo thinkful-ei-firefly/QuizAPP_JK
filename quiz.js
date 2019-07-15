@@ -39,7 +39,7 @@ const questions = [
     a3: 'Terry',
     a4: 'Ben',
     correct: 'Georgie',
-    funFact: 'Here\'s a map of Derry! (insert link)',
+    funFact: 'Here\'s a <a href= "https://bit.ly/2XPPPjt"> map </a> of Derry! ',
   },
   {question: 'What is Bev\'s occupation?',
     a1: 'Writer',
@@ -191,13 +191,13 @@ function restart () {
 
 
 //Here be the listeners. Quiet, please.
-$('main').on('click', '.startQuiz', function () {askQuestion();});
+$('main').on('click', '.startQuiz', askQuestion);
 
 $('main').on('submit', function () {
   event.preventDefault();
   checkQuestion();
 });
 
-$('main').on('click', '.next', function () {feedbackNext();});
+$('main').on('click', '.next', feedbackNext);
 
-$('main').on('click', '.restart', function () {restart();});
+$('main').on('click', '.restart', restart);
