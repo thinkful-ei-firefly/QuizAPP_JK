@@ -51,6 +51,10 @@ div {
     text-align: center;
 }
 
+button:hover {
+    cursor: pointer;
+  }
+
 @media screen and (max-width: 1024px) {
     button {
         text-align: center;
